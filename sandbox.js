@@ -1,26 +1,15 @@
-// strings
-console.log("hello, world");
+// type conversion
+let score = "100";
 
-let email = "mario@thenetninja.co.uk";
-console.log(email);
+// score = Number(score);
 
-// string concatenation
-let firstName = "Brandon";
-let lastName = "Sanderson";
+// console.log(score + 1);
+// console.log(typeof score);
 
-let fullName = firstName + " " + lastName;
-console.log(fullName);
+// let result = Number("hello");
+// let result = String(50);
+// let result = Boolean(0);
+let result = Boolean("");
 
-// getting characters
-console.log(fullName[2]);
-
-// string length
-console.log(fullName.length);
-
-// string methods
-console.log(fullName.toUpperCase());
-let result = fullName.toLocaleLowerCase();
-console.log(result, fullName);
-
-let index = email.indexOf("@");
-console.log(index);
+console.log(result);
+console.log(typeof result);

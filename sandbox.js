@@ -1,15 +1,15 @@
-// type conversion
-let score = "100";
+// for loops
 
-// score = Number(score);
+// for (let i = 0; i < 5; i++) {
+//   console.log("in loop:", i);
+// }
 
-// console.log(score + 1);
-// console.log(typeof score);
+// console.log("loop finished");
 
-// let result = Number("hello");
-// let result = String(50);
-// let result = Boolean(0);
-let result = Boolean("");
+const names = ["shaun", "mario", "luigi"];
 
-console.log(result);
-console.log(typeof result);
+for (let i = 0; i < names.length; i++) {
+  // console.log(names[i]);
+  let html = `<div>${names[i]}</div>`;
+  console.log(html);
+}

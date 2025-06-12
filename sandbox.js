@@ -1,15 +1,10 @@
-// type conversion
-let score = "100";
+// logical NOT (!)
 
-// score = Number(score);
+let user = false;
 
-// console.log(score + 1);
-// console.log(typeof score);
+if (!user) {
+  console.log("you must be logged in to continue");
+}
 
-// let result = Number("hello");
-// let result = String(50);
-// let result = Boolean(0);
-let result = Boolean("");
-
-console.log(result);
-console.log(typeof result);
+console.log(!true);
+console.log(!false);

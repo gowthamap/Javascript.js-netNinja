@@ -1,15 +1,17 @@
-// type conversion
-let score = "100";
+// variables & block scope
+const age = 30;
+// age = 50;
 
-// score = Number(score);
+if (true) {
+  const age = 40;
+  const names = "shaun";
+  console.log("inside 1st code block: ", age, names);
 
-// console.log(score + 1);
-// console.log(typeof score);
+  if (true) {
+    const age = 50;
+    console.log("inside 2nd code bloc: ", age);
+    var test = "hello";
+  }
+}
 
-// let result = Number("hello");
-// let result = String(50);
-// let result = Boolean(0);
-let result = Boolean("");
-
-console.log(result);
-console.log(typeof result);
+console.log("outside code block: ", age, names, test);

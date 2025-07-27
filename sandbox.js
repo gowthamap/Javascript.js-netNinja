@@ -1,43 +1,17 @@
-// object literals
+// Math object
 
-const blogs = [
-  {
-    title: "why mac & cheese rules",
-    likes: 30,
-  },
-  { title: "10 things to make with marmite", likes: 50 },
-];
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
 
-// console.log(blogs);
+const area = 7.7;
 
-let user = {
-  name: "crystal",
-  age: 30,
-  email: "crystal@thenetninja.co.uk",
-  location: "berlin",
-  blogs: [
-    {
-      title: "why mac & cheese rules",
-      likes: 30,
-    },
-    { title: "10 things to make with marmite", likes: 50 },
-  ],
-  login: function () {
-    console.log("the user logged in");
-  },
-  logout: function () {
-    console.log("the user logged out");
-  },
-  logBlogs: function () {
-    // // console.log(this.blogs);
-    console.log("this use has written the following blogs:");
-    this.blogs.forEach((blog) => {
-      console.log(blog.title, blog.likes);
-    });
-  },
-};
+console.log(Math.round(area));
+console.log(Math.floor(area));
+console.log(Math.ceil(area));
+console.log(Math.trunc(area));
 
-// user.login();
-// user.logout();
-user.logBlogs();
-console.log(this);
+// random numbers
+const random = Math.random();
+console.log(random);
+console.log(Math.round(random * 100));

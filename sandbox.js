@@ -1,17 +1,14 @@
-// variables & block scope
-const age = 30;
-// age = 50;
+// get a reference to the 'ul'
+const ul = document.querySelector(".people");
 
-if (true) {
-  const age = 40;
-  const names = "shaun";
-  console.log("inside 1st code block: ", age, names);
+const people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
 
-  if (true) {
-    const age = 50;
-    console.log("inside 2nd code bloc: ", age);
-    var test = "hello";
-  }
-}
+let html = ``;
 
-console.log("outside code block: ", age, names, test);
+people.forEach((person) => {
+  // create html template
+  html += `<li style="color: purple">${person}</li>`;
+});
+
+console.log(html);
+ul.innerHTML = html;

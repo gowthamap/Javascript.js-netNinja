@@ -1,14 +1,17 @@
-// get a reference to the 'ul'
-const ul = document.querySelector(".people");
+// Math object
 
-const people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
 
-let html = ``;
+const area = 7.7;
 
-people.forEach((person) => {
-  // create html template
-  html += `<li style="color: purple">${person}</li>`;
-});
+console.log(Math.round(area));
+console.log(Math.floor(area));
+console.log(Math.ceil(area));
+console.log(Math.trunc(area));
 
-console.log(html);
-ul.innerHTML = html;
+// random numbers
+const random = Math.random();
+console.log(random);
+console.log(Math.round(random * 100));

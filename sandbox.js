@@ -1,14 +1,19 @@
-// get a reference to the 'ul'
-const ul = document.querySelector(".people");
+// primitive values
 
-const people = ["mario", "luigi", "ryu", "shaun", "chun-li"];
+// let scoreOne = 50;
+// let scoreTwo = scoreOne;
 
-let html = ``;
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-people.forEach((person) => {
-  // create html template
-  html += `<li style="color: purple">${person}</li>`;
-});
+// scoreOne = 100;
+// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
-console.log(html);
-ul.innerHTML = html;
+// reference values
+
+const userOne = { name: "ryu", age: 30 };
+const userTwo = userOne;
+
+console.log(userOne, userTwo);
+
+userOne.name = "chun-li";
+console.log(userOne, userTwo);

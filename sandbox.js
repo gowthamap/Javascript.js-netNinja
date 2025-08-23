@@ -1,19 +1,22 @@
-// primitive values
+// const content = document.querySelector("p");
 
-// let scoreOne = 50;
-// let scoreTwo = scoreOne;
+// console.log(content.classList);
+// content.classList.add("error");
+// content.classList.remove("error");
+// content.classList.add("success");
 
-// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+const paras = document.querySelectorAll("p");
 
-// scoreOne = 100;
-// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+paras.forEach((p) => {
+  if (p.textContent.includes("error")) {
+    p.classList.add("error");
+  }
+  if (p.textContent.includes("success")) {
+    p.classList.add("success");
+  }
+});
 
-// reference values
+const title = document.querySelector(".title");
 
-const userOne = { name: "ryu", age: 30 };
-const userTwo = userOne;
-
-console.log(userOne, userTwo);
-
-userOne.name = "chun-li";
-console.log(userOne, userTwo);
+title.classList.toggle("test");
+title.classList.remove("test");
